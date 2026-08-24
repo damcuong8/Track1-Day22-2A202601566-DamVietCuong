@@ -48,8 +48,8 @@
   "legal_classification": {
     "vietnam": {
       "status": "uncertain-requires-legal-review",
-      "rationale": "Việt Nam chưa có khung pháp lý AI chuyên biệt tương đương EU nên cần rà soát quy định về khám chữa bệnh, thiết bị y tế và bảo vệ dữ liệu cá nhân trước khi triển khai sản phẩm chạm tới quyết định sức khỏe.",
-      "source_ids": ["SRC-03"]
+      "rationale": "Luật Trí tuệ nhân tạo số 134/2025/QH15 có hiệu lực từ 01/3/2026 quản lý AI theo ba nhóm rủi ro, nên sản phẩm chạm tới quyết định sức khỏe nhiều khả năng thuộc nhóm rủi ro cao; cần đọc toàn văn luật và danh mục kèm theo cùng quy định về khám chữa bệnh và bảo vệ dữ liệu cá nhân để xác định chính xác nghĩa vụ tuân thủ.",
+      "source_ids": ["SRC-04"]
     },
     "eu": {
       "status": "high-risk",
@@ -70,8 +70,8 @@
     "risk_acceptance_owner": "Giám đốc y khoa",
     "independent_reviewer": "Bác sĩ cố vấn độc lập",
     "decision": "research-only",
-    "release_blockers": ["GAP-01: lưới an toàn dấu hiệu nguy hiểm chưa được xây dựng và kiểm thử"],
-    "release_conditions": ["Hoàn tất và kiểm thử lưới an toàn dấu hiệu nguy hiểm theo GAP-01", "Có kết quả legal và privacy review trước khi mở rộng nhóm thử nghiệm"],
+    "release_blockers": ["GAP-01: lưới an toàn dấu hiệu nguy hiểm chưa được xây dựng và kiểm thử", "GAP-03: chưa có kết luận phân loại nhóm rủi ro theo Luật Trí tuệ nhân tạo 134/2025/QH15"],
+    "release_conditions": ["Hoàn tất và kiểm thử lưới an toàn dấu hiệu nguy hiểm theo GAP-01", "Có văn bản phân loại nhóm rủi ro theo Luật 134/2025/QH15 và kế hoạch tuân thủ theo GAP-03", "Có kết quả privacy review trước khi mở rộng nhóm thử nghiệm"],
     "next_review_trigger": "Cổng review discovery ngày 2026-12-15 hoặc khi có sự cố under-triage hoặc thay đổi mô hình và nguồn dữ liệu",
     "residual_risk_rationale": "Ở giai đoạn discovery với nhóm thử nghiệm giới hạn và có giám sát y tế, rủi ro còn lại được kiểm soát nhưng under-triage vẫn nghiêm trọng nên chỉ chọn research-only cho đến khi lưới an toàn được kiểm thử."
   }
